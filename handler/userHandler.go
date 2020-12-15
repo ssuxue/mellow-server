@@ -10,6 +10,12 @@ import (
 	"time"
 )
 
+// Gin 获取 POST JSON DATA 封装登录参数
+type LoginForm struct {
+	Username string `json:"username" binding:"required"`
+	Password string `json:"password" binding:"required"`
+}
+
 func GetUserById(context *gin.Context) {
 	id, _ := strconv.Atoi(context.Param("id"))
 	userModel := model.User{}
@@ -104,11 +110,18 @@ func SignupByPhone(context *gin.Context) {
 }
 
 func Login(context *gin.Context) {
-	username := context.PostForm("username")
-	password := context.PostForm("password")
+	json := &LoginForm{}
+	if context.BindJSON(&json) != nil {
+		context.JSON(http.StatusBadRequest, model.Result{
+			Code:    http.StatusBadRequest,
+			Message: "请求参数为空",
+			Data:    nil,
+		})
+		return
+	}
 
 	user := model.User{}
-	member := user.FindByUsername(username)
+	member := user.FindByUsername(json.Username)
 
 	if member.IsEmpty() {
 		context.JSON(http.StatusNotFound, model.Result{
@@ -119,7 +132,7 @@ func Login(context *gin.Context) {
 		return
 	}
 
-	isOk, _ := util.ValidatePassword(password, member.Password)
+	isOk, _ := util.ValidatePassword(json.Password, member.Password)
 	if !isOk {
 		context.JSON(http.StatusBadRequest, model.Result{
 			Code:    http.StatusBadRequest,
