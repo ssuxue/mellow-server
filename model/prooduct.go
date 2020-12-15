@@ -3,18 +3,18 @@ package model
 import "memo/initDB"
 
 type Product struct {
-	ID int `gorm:"AUTO_INCREMENT" json:"id"`
-	ProductCategoryId int64 `json:"product_category_id"`
+	ID                  int    `gorm:"AUTO_INCREMENT" json:"id"`
+	ProductCategoryId   int64  `json:"product_category_id"`
 	ProductAttributeIds string `json:"product_attribute_ids"`
-	Name string `json:"name"`
-	Picture string `json:"picture"`
-	NewStatus int8 `json:"new_status"`
-	RecommendStatus int8 `json:"recommend_status"`
-	VerifyStatus int8 `json:"verify_status"`
-	Sale int `json:"sale"`
-	Price int `json:"price"`
-	Description string `json:"description"`
-	AlbumPictures string `gorm:"column:album_pics" json:"album_pics"`
+	Name                string `json:"name"`
+	Picture             string `json:"picture"`
+	NewStatus           int8   `json:"new_status"`
+	RecommendStatus     int8   `json:"recommend_status"`
+	VerifyStatus        int8   `json:"verify_status"`
+	Sale                int    `json:"sale"`
+	Price               int    `json:"price"`
+	Description         string `json:"description"`
+	AlbumPictures       string `gorm:"column:album_pics" json:"album_pics"`
 }
 
 func (product Product) TableName() string {

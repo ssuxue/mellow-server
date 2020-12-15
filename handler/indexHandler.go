@@ -31,7 +31,7 @@ func Upload(c *gin.Context) {
 }
 
 func GetAll(context *gin.Context) {
-	milkTea := model.MilkTea{}
+	milkTea := model.BubbleTea{}
 	milkTeas := milkTea.FindAll()
 	result := model.Result{
 		Code:    http.StatusOK,
@@ -42,5 +42,3 @@ func GetAll(context *gin.Context) {
 		"result": result,
 	})
 }
-
-

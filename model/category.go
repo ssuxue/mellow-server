@@ -3,7 +3,7 @@ package model
 import "memo/initDB"
 
 type Category struct {
-	ID int `gorm:"AUTO_INCREMENT" json:"id"`
+	ID   int    `gorm:"AUTO_INCREMENT" json:"id"`
 	Name string `json:"name"`
 	Icon string `json:"icon"`
 }

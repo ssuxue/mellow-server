@@ -9,11 +9,13 @@ import (
 func GetMilkTeaCategory(context *gin.Context) {
 	milkTeaCategory := model.MilkTeaCategory{}
 	categories := milkTeaCategory.FindCategory()
+
 	result := model.Result{
 		Code:    http.StatusOK,
 		Message: "查询成功",
 		Data:    categories,
 	}
+
 	context.JSON(http.StatusOK, gin.H{
 		"result": result,
 	})
@@ -22,11 +24,13 @@ func GetMilkTeaCategory(context *gin.Context) {
 func GetAllCategory(context *gin.Context) {
 	category := model.Category{}
 	categories := category.FindAll()
+
 	result := model.Result{
 		Code:    http.StatusOK,
 		Message: "查询成功",
 		Data:    categories,
 	}
+
 	context.JSON(http.StatusOK, gin.H{
 		"result": result,
 	})

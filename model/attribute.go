@@ -3,10 +3,10 @@ package model
 import "memo/initDB"
 
 type Attribute struct {
-	ID int `gorm:"AUTO_INCREMENT" json:"id"`
-	Name string `json:"name"`
+	ID        int    `gorm:"AUTO_INCREMENT" json:"id"`
+	Name      string `json:"name"`
 	InputList string `json:"input_list"`
-	Type int8 `json:"type"`
+	Type      int8   `json:"type"`
 }
 
 func (attribute Attribute) TableName() string {

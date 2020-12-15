@@ -25,5 +25,11 @@ func SetupRouter() *gin.Engine {
 		c.Redirect(http.StatusMovedPermanently, "http://www.zhihu.com")
 	})
 	router.POST("/upload", handler.Upload)
+
+	userGroup := router.Group("/user")
+	{
+		userGroup.POST("/signup", handler.Signup)
+		userGroup.POST("/login", handler.Login)
+	}
 	return router
 }

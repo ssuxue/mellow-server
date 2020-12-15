@@ -3,8 +3,43 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="47d964ac-8908-4a9f-af13-4ced416d5943" name="Default Changelist" comment="" />
+    <list default="true" id="47d964ac-8908-4a9f-af13-4ced416d5943" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/handler/userHandler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/encryptAndEecrypt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/categoryHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/categoryHandler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/indexHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/indexHandler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/productHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/productHandler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initData/initRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/initData/initRouter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/attribute.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/attribute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/category.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/category.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/milkTea.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/bubbleTea.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/milkTeaCategory.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/milkTeaCategory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/prooduct.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/prooduct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/userModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/userModel.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +53,14 @@
     </option>
   </component>
   <component name="GOROOT" path="D:\Program Files\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1k8vi0osgjsFxqUf3qPnJxCTqOc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,6 +118,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -91,22 +142,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605095187605" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1607659408252">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1608022468770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607659408252" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1607659408252">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608022468770" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1608022468770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607659408252" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1607659408252">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608022468770" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1608022468770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607659408252" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1607659408252">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608022468770" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1608022468770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607659408252" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608022468770" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1605098666061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -115,9 +166,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="468" y="0" width="600" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605095573678" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605747250491">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608016337473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605747250491" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608016337473" />
   </component>
 </project>
