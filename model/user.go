@@ -16,8 +16,9 @@ type User struct {
 	CreateTime time.Time `json:"create_time"`
 	Icon       string    `json:"icon" form:"icon"`
 	Gender     int       `json:"gender"`
-	Birthday   string    `json:"birthday"`
-	Credit     int       `json:"credit"`
+	Birthday   time.Time `form:"birthday" time_format:"2006-01-02" time_utc:"1"`
+	//Birthday   string    `json:"birthday"`
+	Credit int `json:"credit"`
 }
 
 func (User) TableName() string {

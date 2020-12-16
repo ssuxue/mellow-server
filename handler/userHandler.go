@@ -64,7 +64,7 @@ func Signup(context *gin.Context) {
 	user := model.User{}
 	user.Username = username
 	user.Password = string(passwordByte)
-	user.Birthday = timer.Format("2006-01-02")
+	user.Birthday = timer
 	user.CreateTime = timer
 	user.Icon = "https://pic4.zhimg.com/80/v2-82f6a065d5451c5cf3c51bc840e78ada_720w.jpg"
 	user.Nickname = "未命名用户"
@@ -91,7 +91,8 @@ func SignupByPhone(context *gin.Context) {
 
 	user := model.User{}
 	user.Phone = phone
-	user.Birthday = timer.Format("2006-01-02")
+	//user.Birthday = timer.Format("2006-01-02")
+	user.Birthday = timer
 	user.CreateTime = timer
 	user.Icon = "https://pic4.zhimg.com/80/v2-82f6a065d5451c5cf3c51bc840e78ada_720w.jpg"
 	user.Nickname = "未命名用户"
