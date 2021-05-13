@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+option go_package = "proto";
+package proto;
+
+//import "proto/google/protobuf/timestamp.proto";
+
+//message User {
+//  int64 id = 1;
+//  string username = 2;
+//  string password = 3;
+//  string nickname = 4;
+//  string phone = 5;
+//  int32 status = 6;
+//  google.protobuf.Timestamp create_time = 7;
+//  string icon = 8;
+//  int32 gender = 9;
+//  google.protobuf.Timestamp birthday = 10;
+//  int64 credit = 11;
+//}
+
+message LoginRequest {
+  string email = 1;
+  string password = 2;
+}
+
+message RegisterRequest {
+  string username = 1;
+  string email = 2;
+  string password = 3;
+}
+
+message UserinfoRequest {
+  int64 uid = 1;
+  string token = 2;
+}
+
+message UserResponse {
+  int64 id = 1;
+  string email = 2;
+  string access_token = 3;
+  int64 access_expire = 4;
+  int64 refresh_after = 5;
+}
+
+service UserService {
+  rpc Login(LoginRequest) returns(UserResponse);
+  rpc Register(RegisterRequest) returns(UserResponse);
+  rpc Userinfo(UserinfoRequest) returns(UserResponse);
+}
