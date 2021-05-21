@@ -34,7 +34,7 @@ func (u *UserServer) Login(_ context.Context, req *proto.LoginRequest) (*proto.U
 	res.Id = int64(user.ID)
 	res.AccessToken = "" // TODO
 	res.RefreshAfter = 10
-	res.AccessExpire =60
+	res.AccessExpire = 60
 	return res, nil
 }
 
@@ -54,7 +54,9 @@ func (u *UserServer) Register(_ context.Context, req *proto.RegisterRequest) (*p
 	user.Phone = req.Username
 	user.Birthday = time.Now()
 
-	u.Service.Insert(user)
+	if res := u.Service.Insert(user); res == 0 {
+		return nil, errors.New("failed to add user")
+	}
 
 	res := &proto.UserResponse{}
 	res.Email = req.Email
